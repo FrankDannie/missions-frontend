@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import MissionList from './components/MissionList';
+import MissionDetail from './components/MissionDetail';
+import RobotForm from './components/RobotForm';
+import MissionForm from './components/MissionForm';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [selectedMissionId, setSelectedMissionId] = useState(null);
+
+    return (
+        <div className="App">
+            <MissionList onSelect={setSelectedMissionId} />
+            {selectedMissionId && <MissionDetail missionId={selectedMissionId} />}
+            <RobotForm />
+            <MissionForm />
+        </div>
+    );
+};
 
 export default App;
