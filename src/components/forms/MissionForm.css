@@ -1,0 +1,33 @@
+@import './Form.css';
+
+.mission-form {
+  /* The .form-container class from Form.css will handle this */
+}
+
+.mission-form h2 {
+  margin-bottom: 20px;
+}
+
+.mission-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.mission-form input,
+.mission-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mission-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.mission-form button[type="button"] {
+  background-color: #6c757d;
+  color: #fff;
+}

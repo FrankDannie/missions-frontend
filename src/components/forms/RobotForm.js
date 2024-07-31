@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createRobot, updateRobot, fetchRobotById } from '../../services/api';
-import Labels from '../common/labels'; // Adjust path as needed
+import Labels from '../common/labels';
 import './RobotForm.css';
 
 const RobotForm = ({ robotId, onClose, onSubmit }) => {

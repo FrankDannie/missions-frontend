@@ -12,6 +12,16 @@ export const Labels = {
       UPDATETITLE: 'Update Robot',
       NODATA: 'No robots available.',
     },
+
+    mission: {
+        MISSION_NAME: 'Mission Name:',
+        MISSION_DESCRIPTION: 'Description:',
+        ROBOT_SELECT: 'Robot:',
+        CREATE_MISSION: 'Create Mission',
+        UPDATE_MISSION: 'Update Mission',
+        SELECT_ROBOT: 'Select a robot'
+      },
+
   
     // Form labels
     form: {
