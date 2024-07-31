@@ -3,6 +3,11 @@ export const Labels = {
     LOADING: 'Loading...',
     CANCEL: 'Cancel',
     ORGANOZATION_NAME: 'TAUROB',
+    WELCOME_MESSAGE: 'Welcome to the Mission Tracker',
+    MISSIONS_TITLE: 'Missions',
+    MISSION_DESCRIPTION: 'View and manage missions.',
+    ROBOT_TITLE: 'Robots',
+    ROBOT_DESCRIPTION: 'View and manage robots.',
     
     // Robot labels
     robot: {
@@ -21,7 +26,6 @@ export const Labels = {
         UPDATE_MISSION: 'Update Mission',
         SELECT_ROBOT: 'Select a robot'
       },
-
   
     // Form labels
     form: {
