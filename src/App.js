@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
-import MissionList from './components/MissionList';
-import MissionDetail from './components/MissionDetail';
-import RobotForm from './components/RobotForm';
-import MissionForm from './components/MissionForm';
+import React from 'react';
+import Header from './components/layout/Header';
+import AppRouter from './routes/AppRouter';
+import './assets/styles/theme.css';  // Import global styles
 
-const App = () => {
-    const [selectedMissionId, setSelectedMissionId] = useState(null);
-
-    return (
-        <div className="App">
-            <MissionList onSelect={setSelectedMissionId} />
-            {selectedMissionId && <MissionDetail missionId={selectedMissionId} />}
-            <RobotForm />
-            <MissionForm />
-        </div>
-    );
-};
+const App = () => (
+  <div>
+    <Header />
+    <AppRouter />
+  </div>
+);
 
 export default App;
