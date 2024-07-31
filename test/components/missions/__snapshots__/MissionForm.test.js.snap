@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MissionForm renders form for creating a new mission 1`] = `
+<DocumentFragment>
+  <div
+    class="form-container mission-form"
+  >
+    <h2>
+      Create Mission
+    </h2>
+    <form>
+      <label>
+        Mission Name:
+        <input
+          name="name"
+          required=""
+          type="text"
+          value=""
+        />
+      </label>
+      <label>
+        Description:
+        <textarea
+          name="description"
+          required=""
+        />
+      </label>
+      <label>
+        Robot:
+        <select
+          name="robot_id"
+          required=""
+        >
+          <option
+            value=""
+          >
+            Select a robot
+          </option>
+          <option
+            value="1"
+          >
+            Robot 1
+          </option>
+          <option
+            value="2"
+          >
+            Robot 2
+          </option>
+        </select>
+      </label>
+      <button
+        type="submit"
+      >
+        Create
+      </button>
+      <button
+        type="button"
+      >
+        Cancel
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MissionForm renders form for updating an existing mission 1`] = `
+<DocumentFragment>
+  <div
+    class="form-container mission-form"
+  >
+    <h2>
+      Update Mission
+    </h2>
+    <form>
+      <label>
+        Mission Name:
+        <input
+          name="name"
+          required=""
+          type="text"
+          value="Test Mission"
+        />
+      </label>
+      <label>
+        Description:
+        <textarea
+          name="description"
+          required=""
+        >
+          Test Description
+        </textarea>
+      </label>
+      <label>
+        Robot:
+        <select
+          name="robot_id"
+          required=""
+        >
+          <option
+            value=""
+          >
+            Select a robot
+          </option>
+          <option
+            value="1"
+          >
+            Robot 1
+          </option>
+          <option
+            value="2"
+          >
+            Robot 2
+          </option>
+        </select>
+      </label>
+      <button
+        type="submit"
+      >
+        Update
+      </button>
+      <button
+        type="button"
+      >
+        Cancel
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
