@@ -71,7 +71,7 @@ const MissionForm = ({ missionId, onClose, onMissionUpdate }) => {
             ))}
           </select>
         </label>
-        <button type="submit">{missionId ? Labels.mission.UPDATE_MISSION : Labels.mission.CREATE_MISSION}</button>
+        <button type="submit">{missionId ? Labels.mission.UPDATE : Labels.mission.CREATE}</button>
         <button type="button" onClick={handleCancel}>{Labels.CANCEL}</button>
       </form>
     </div>

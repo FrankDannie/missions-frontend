@@ -24,7 +24,9 @@ export const Labels = {
         ROBOT_SELECT: 'Robot:',
         CREATE_MISSION: 'Create Mission',
         UPDATE_MISSION: 'Update Mission',
-        SELECT_ROBOT: 'Select a robot'
+        SELECT_ROBOT: 'Select a robot',
+        CREATE: 'Create',
+        UPDATE: 'Update'
       },
   
     // Form labels
