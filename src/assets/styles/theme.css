@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #020821;
+  --secondary-color: #6c757d;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+
+body {
+  color: var(--primary-color);
+  padding: var(--spacing-medium);
+}
+
+button {
+  background-color:  #0056b3;
+  color: #fff;
+  padding: var(--spacing-small) var(--spacing-medium);
+}
+
+
+.alert {
+  background-color: var(--secondary-color);
+  padding: var(--spacing-large);
+}
