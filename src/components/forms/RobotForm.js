@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createRobot, updateRobot, fetchRobotById } from '../../services/api';
+import Labels from '../common/labels'; // Adjust path as needed
 import './RobotForm.css';
 
 const RobotForm = ({ robotId, onClose, onSubmit }) => {
@@ -42,16 +43,16 @@ const RobotForm = ({ robotId, onClose, onSubmit }) => {
 
   return (
     <div className="form-container robot-form">
-      <h2>{robotId ? 'Update Robot' : 'Create Robot'}</h2>
+      <h2>{robotId ? Labels.robot.UPDATETITLE : Labels.robot.CREATETITLE}</h2>
       <form onSubmit={handleSubmit}>
-        <label>Name:
+        <label>{Labels.robot.NAME}:
           <input type="text" name="name" value={robot.name} onChange={handleChange} required />
         </label>
-        <label>Model Name:
+        <label>{Labels.robot.MODELNAME}:
           <input type="text" name="model_name" value={robot.model_name} onChange={handleChange} required />
         </label>
-        <button type="submit">{robotId ? 'Update' : 'Create'}</button>
-        <button type="button" onClick={handleCancel}>Cancel</button>
+        <button type="submit">{robotId ? Labels.form.SUBMIT : Labels.form.SUBMIT}</button>
+        <button type="button" onClick={handleCancel}>{Labels.CANCEL}</button>
       </form>
     </div>
   );

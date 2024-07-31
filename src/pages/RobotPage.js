@@ -30,7 +30,6 @@ const RobotPage = () => {
           robots={robots} // Pass the robots list here
           onSelect={setSelectedRobotId}
         />
-        {selectedRobotId && <RobotDetail robotId={selectedRobotId} />}
       </div>
     </div>
   );
