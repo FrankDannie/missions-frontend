@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './MissionList.css';
 
 const MissionList = ({ missions, onSelect }) => {
@@ -20,6 +21,16 @@ const MissionList = ({ missions, onSelect }) => {
       </table>
     </div>
   );
+};
+
+MissionList.propTypes = {
+  missions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string,
+    })
+  ).isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
 export default MissionList;

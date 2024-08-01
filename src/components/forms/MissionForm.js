@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   createMission,
   updateMission,
@@ -110,6 +111,12 @@ const MissionForm = ({ missionId, onClose, onMissionUpdate }) => {
       </form>
     </div>
   );
+};
+
+MissionForm.propTypes = {
+  missionId: PropTypes.string, // Adjust based on actual type (e.g., PropTypes.number if ID is a number)
+  onClose: PropTypes.func.isRequired,
+  onMissionUpdate: PropTypes.func.isRequired,
 };
 
 export default MissionForm;

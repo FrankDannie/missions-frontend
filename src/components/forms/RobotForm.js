@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { createRobot, updateRobot, fetchRobotById } from '../../services/api';
 import Labels from '../common/labels';
 import './RobotForm.css';
@@ -74,6 +75,12 @@ const RobotForm = ({ robotId, onClose, onSubmit }) => {
       </form>
     </div>
   );
+};
+
+RobotForm.propTypes = {
+  robotId: PropTypes.number,
+  onClose: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default RobotForm;

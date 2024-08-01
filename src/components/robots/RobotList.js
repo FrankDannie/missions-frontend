@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './RobotList.css';
 
 const RobotList = ({ robots, onSelect }) => {
@@ -20,6 +21,16 @@ const RobotList = ({ robots, onSelect }) => {
       </table>
     </div>
   );
+};
+
+RobotList.propTypes = {
+  robots: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
 export default RobotList;
