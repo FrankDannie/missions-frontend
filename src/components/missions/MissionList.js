@@ -8,14 +8,12 @@ const MissionList = ({ missions, onSelect }) => {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Description</th>
           </tr>
         </thead>
         <tbody>
           {missions.map(mission => (
             <tr key={mission.id} onClick={() => onSelect(mission.id)}>
               <td>{mission.name || 'N/A'}</td>
-              <td>{mission.description || 'N/A'}</td>
             </tr>
           ))}
         </tbody>
