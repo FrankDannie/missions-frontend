@@ -11,7 +11,7 @@ const MissionList = ({ missions, onSelect }) => {
           </tr>
         </thead>
         <tbody>
-          {missions.map(mission => (
+          {missions.map((mission) => (
             <tr key={mission.id} onClick={() => onSelect(mission.id)}>
               <td>{mission.name || 'N/A'}</td>
             </tr>

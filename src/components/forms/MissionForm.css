@@ -22,12 +22,12 @@
   border-radius: 4px;
 }
 
-.mission-form button[type="submit"] {
+.mission-form button[type='submit'] {
   background-color: #007bff;
   color: #fff;
 }
 
-.mission-form button[type="button"] {
+.mission-form button[type='button'] {
   background-color: #6c757d;
   color: #fff;
 }

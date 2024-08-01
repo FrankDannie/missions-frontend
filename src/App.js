@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/layout/Header';
 import AppRouter from './routes/AppRouter';
-import './assets/styles/theme.css';  // Import global styles
+import './assets/styles/theme.css';
 
 const App = () => (
   <div>

@@ -8,8 +8,12 @@ const MissionDetailModal = ({ mission, onClose }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <h2>{mission.name}</h2>
-        <p><strong>Description:</strong> {mission.description}</p>
-        <p><strong>Robot:</strong> {mission.robot.name}</p>
+        <p>
+          <strong>Description:</strong> {mission.description}
+        </p>
+        <p>
+          <strong>Robot:</strong> {mission.robot.name}
+        </p>
         <button onClick={onClose}>Close</button>
       </div>
     </div>

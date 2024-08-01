@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import MissionList from '../components/missions/MissionList';
-import MissionDetail from '../components/missions/MissionDetail';
 import MissionForm from '../components/forms/MissionForm';
 import { fetchMissions } from '../services/api';
 import './MissionPage.css';
@@ -10,11 +9,11 @@ const MissionsPage = () => {
   const [selectedMissionId, setSelectedMissionId] = useState(null);
 
   useEffect(() => {
-    fetchMissions().then(response => setMissions(response.data));
+    fetchMissions().then((response) => setMissions(response.data));
   }, []);
 
   const handleMissionUpdate = () => {
-    fetchMissions().then(response => setMissions(response.data));
+    fetchMissions().then((response) => setMissions(response.data));
     setSelectedMissionId(null);
   };
 

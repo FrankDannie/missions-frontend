@@ -1,16 +1,14 @@
-/* src/components/layout/Header.css */
 .header {
-    background: linear-gradient(to bottom, #ffffff 0%, #cceeff 100%);
-    color: #173b7e;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-family: 'Arial', sans-serif;
-    font-weight: 600;
-  }
-  
+  background: linear-gradient(to bottom, #ffffff 0%, #cceeff 100%);
+  color: #173b7e;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}

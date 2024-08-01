@@ -8,7 +8,9 @@ const RobotDetailModal = ({ robot, onClose }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <h2>{robot.name}</h2>
-        <p><strong>Model:</strong> {robot.model_name}</p>
+        <p>
+          <strong>Model:</strong> {robot.model_name}
+        </p>
         <button onClick={onClose}>Close</button>
       </div>
     </div>

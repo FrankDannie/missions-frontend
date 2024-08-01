@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Labels from '../components/common/labels'; 
+import Labels from '../components/common/labels';
 import './HomePage.css';
 
 const HomePage = () => {

@@ -6,8 +6,8 @@ const MissionDetail = ({ missionId }) => {
 
   useEffect(() => {
     fetchMissionById(missionId)
-      .then(response => setMission(response.data))
-      .catch(error => console.error('Error fetching mission details:', error));
+      .then((response) => setMission(response.data))
+      .catch((error) => console.error('Error fetching mission details:', error));
   }, [missionId]);
 
   if (!mission) return <p>Loading...</p>;
@@ -20,7 +20,9 @@ const MissionDetail = ({ missionId }) => {
     <div>
       <h2>{name}</h2>
       <p>{description}</p>
-      <p>Robot: {robotName} ({robotModelName})</p>
+      <p>
+        Robot: {robotName} ({robotModelName})
+      </p>
     </div>
   );
 };

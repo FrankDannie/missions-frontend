@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import RobotList from '../components/robots/RobotList';
-import RobotDetail from '../components/robots/RobotDetail';
 import RobotForm from '../components/forms/RobotForm';
 import { fetchRobots } from '../services/api';
 import './RobotPage.css';
@@ -10,11 +9,11 @@ const RobotPage = () => {
   const [selectedRobotId, setSelectedRobotId] = useState(null);
 
   useEffect(() => {
-    fetchRobots().then(response => setRobots(response.data));
+    fetchRobots().then((response) => setRobots(response.data));
   }, []);
 
   const handleRobotUpdate = () => {
-    fetchRobots().then(response => setRobots(response.data));
+    fetchRobots().then((response) => setRobots(response.data));
   };
 
   return (
