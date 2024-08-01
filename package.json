@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
+    "lint": "eslint src/"
   },
   "eslintConfig": {
     "extends": [
@@ -47,10 +48,13 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^16.0.0",
     "babel-jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.1.4",
     "jest": "^28.0.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-junit": "^15.0.0",
     "jest-svg-transformer": "^1.0.0",
+    "lint-staged": "^15.2.7",
     "prettier": "^3.3.3"
   }
 }
