@@ -1,4 +1,3 @@
-/* RobotList.css */
 .robot-table-container {
   display: flex;
   justify-content: center;
@@ -15,7 +14,7 @@
 .robot-table th,
 .robot-table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px 180px;;
   text-align: center;
 }
 
