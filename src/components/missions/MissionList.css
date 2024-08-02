@@ -15,7 +15,7 @@
 .mission-table th,
 .mission-table td {
   border: 1px solid #ddd;
-  padding: 10px; /* Adjust padding for better space utilization */
+  padding: 10px 205px; /* Adjust padding for better space utilization */
   text-align: center;
 }
 
