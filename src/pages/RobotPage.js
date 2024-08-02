@@ -1,20 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import RobotList from '../components/robots/RobotList';
-import RobotForm from '../components/forms/RobotForm';
-import { fetchRobots } from '../services/api';
-import './RobotPage.css';
+import React, { useState, useEffect } from 'react'
+import RobotList from '../components/robots/RobotList'
+import RobotForm from '../components/forms/RobotForm'
+import { fetchRobots } from '../services/api'
+import './RobotPage.css'
 
 const RobotPage = () => {
-  const [robots, setRobots] = useState([]);
-  const [selectedRobotId, setSelectedRobotId] = useState(null);
+  // State to hold robots data and the selected robot ID
+  const [robots, setRobots] = useState([])
+  const [selectedRobotId, setSelectedRobotId] = useState(null)
 
+  // Fetch robots data on component mount
   useEffect(() => {
-    fetchRobots().then((response) => setRobots(response.data));
-  }, []);
+    fetchRobots().then((response) => setRobots(response.data))
+  }, [])
 
+  // Handle robot update and reset selectedRobotId
   const handleRobotUpdate = () => {
-    fetchRobots().then((response) => setRobots(response.data));
-  };
+    fetchRobots().then((response) => setRobots(response.data))
+    setSelectedRobotId(null) // Optional: Reset selectedRobotId after update
+  }
 
   return (
     <div className="robot-page">
@@ -31,7 +35,7 @@ const RobotPage = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RobotPage;
+export default RobotPage

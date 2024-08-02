@@ -1,48 +1,49 @@
 @import './Form.css';
 
+/* Styling for the robot form container */
 .robot-form {
   /* The .form-container class from Form.css will handle this */
 }
 
 .robot-form h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem; /* Make the heading a bit larger for better visibility */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 1.5rem; /* Increase heading size for visibility */
 }
 
 .robot-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold; /* Makes label text stand out */
+  display: block; /* Display label as block element for full-width */
+  margin-bottom: 10px; /* Space below label */
+  font-weight: bold; /* Bold text for labels */
 }
 
 .robot-form input,
 .robot-form textarea {
-  width: 100%;
+  width: 100%; /* Full-width input and textarea */
   padding: 10px; /* Increased padding for better usability */
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; /* Ensure padding and border are included in element width */
+  margin-top: 5px; /* Space above input and textarea */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .robot-form textarea {
-  resize: vertical; /* Allow vertical resizing for textareas */
+  resize: vertical; /* Allow vertical resizing of textareas */
   min-height: 100px; /* Minimum height for textareas */
 }
 
 .robot-form button[type='submit'],
 .robot-form button[type='button'] {
   padding: 10px 20px; /* Consistent padding for buttons */
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Consistent font size */
   transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .robot-form button[type='submit'] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #007bff; /* Primary color for submit button */
+  color: #fff; /* White text */
 }
 
 .robot-form button[type='submit']:hover {
@@ -50,10 +51,25 @@
 }
 
 .robot-form button[type='button'] {
-  background-color: #6c757d;
-  color: #fff;
+  background-color: #6c757d; /* Secondary color for button */
+  color: #fff; /* White text */
 }
 
 .robot-form button[type='button']:hover {
   background-color: #5a6268; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+  .robot-form h2 {
+    font-size: 1.25rem; /* Slightly smaller heading on smaller screens */
+  }
+
+  .robot-form input,
+  .robot-form textarea {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .robot-form button {
+    padding: 8px 15px; /* Adjust button padding for smaller screens */
+  }
 }

@@ -1,21 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import MissionList from '../components/missions/MissionList';
-import MissionForm from '../components/forms/MissionForm';
-import { fetchMissions } from '../services/api';
-import './MissionPage.css';
+import React, { useState, useEffect } from 'react'
+import MissionList from '../components/missions/MissionList'
+import MissionForm from '../components/forms/MissionForm'
+import { fetchMissions } from '../services/api'
+import './MissionPage.css'
 
 const MissionsPage = () => {
-  const [missions, setMissions] = useState([]);
-  const [selectedMissionId, setSelectedMissionId] = useState(null);
+  // State to hold missions data and the selected mission ID
+  const [missions, setMissions] = useState([])
+  const [selectedMissionId, setSelectedMissionId] = useState(null)
 
+  // Fetch missions data on component mount
   useEffect(() => {
-    fetchMissions().then((response) => setMissions(response.data));
-  }, []);
+    fetchMissions().then((response) => setMissions(response.data))
+  }, [])
 
+  // Handle mission update and reset selectedMissionId
   const handleMissionUpdate = () => {
-    fetchMissions().then((response) => setMissions(response.data));
-    setSelectedMissionId(null);
-  };
+    fetchMissions().then((response) => setMissions(response.data))
+    setSelectedMissionId(null)
+  }
 
   return (
     <div className="missions-page">
@@ -29,7 +32,7 @@ const MissionsPage = () => {
         <MissionList missions={missions} onSelect={setSelectedMissionId} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MissionsPage;
+export default MissionsPage

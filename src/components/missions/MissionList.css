@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto; /* Centers container horizontally with margin auto */
+  margin: 20px auto; /* Centers container horizontally */
 }
 
 .mission-table {
@@ -15,8 +15,12 @@
 .mission-table th,
 .mission-table td {
   border: 1px solid #ddd;
-  padding: 10px 200px;
+  padding: 10px; /* Adjust padding for better space utilization */
   text-align: center;
+}
+
+.mission-table th {
+  background-color: #f9f9f9; /* Light background for table headers */
 }
 
 .mission-table tr:nth-child(even) {
@@ -25,4 +29,16 @@
 
 .mission-table tr:hover {
   background-color: #ddd;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 768px) {
+  .mission-table th,
+  .mission-table td {
+    padding: 8px; /* Reduced padding on smaller screens */
+  }
+}
+
+.mission-table tr {
+  cursor: pointer; /* Indicate that the row is clickable */
 }

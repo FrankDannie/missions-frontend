@@ -1,24 +1,28 @@
+/* CSS Variables for Theme and Spacing */
 :root {
-  --primary-color: #020821;
-  --secondary-color: #6c757d;
+  --primary-color: #020821; /* Dark blue for primary text color */
+  --secondary-color: #6c757d; /* Grey for secondary elements */
 
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
+  --spacing-small: 8px; /* Small spacing unit */
+  --spacing-medium: 16px; /* Medium spacing unit */
+  --spacing-large: 24px; /* Large spacing unit */
 }
 
+/* Global Styles */
 body {
-  color: var(--primary-color);
-  padding: var(--spacing-medium);
+  color: var(--primary-color); /* Primary text color */
+  padding: var(--spacing-medium); /* Medium padding around the body */
 }
 
+/* Button Styles */
 button {
-  background-color: #0056b3;
-  color: #fff;
-  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--primary-color); /* Use primary color for background */
+  color: #fff; /* White text color */
+  padding: var(--spacing-small) var(--spacing-medium); /* Small vertical padding and medium horizontal padding */
 }
 
+/* Alert Box Styles */
 .alert {
-  background-color: var(--secondary-color);
-  padding: var(--spacing-large);
+  background-color: var(--secondary-color); /* Secondary color for background */
+  padding: var(--spacing-large); /* Large padding inside the alert box */
 }

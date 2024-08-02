@@ -4,11 +4,33 @@
   text-align: center;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
 
 .header h1 {
   margin: 0;
   font-size: 2.5rem;
-  font-family: 'Arial', sans-serif;
   font-weight: 600;
+  line-height: 1.2; /* Improve readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
 }

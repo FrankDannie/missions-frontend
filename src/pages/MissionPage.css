@@ -1,32 +1,38 @@
 @import '../assets/styles/common.css';
 
+/* Page container */
 .missions-page {
   padding: 20px;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
+/* Page title styling */
 .page-title {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
+/* Container for missions content */
 .missions-content {
   display: flex;
   gap: 20px;
 }
 
+/* Flex items */
 .mission-list,
 .mission-detail {
   flex: 1;
 }
 
+/* List styling */
 .mission-list ul {
   list-style: none;
   padding: 0;
 }
 
+/* List item styling */
 .mission-list li {
   padding: 10px;
   border: 1px solid #ccc;
@@ -35,10 +41,12 @@
   transition: background-color 0.3s;
 }
 
+/* Hover effect for list items */
 .mission-list li:hover {
   background-color: #f0f0f0;
 }
 
+/* Mission form styling */
 .mission-form {
   margin-bottom: 20px;
 }

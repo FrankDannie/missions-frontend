@@ -1,11 +1,20 @@
-import React from 'react';
-import './Header.css';
-import Labels from '../common/labels';
+import React from 'react'
+import PropTypes from 'prop-types'
+import './Header.css'
+import Labels from '../common/labels'
 
-const Header = () => (
+const Header = ({ orgName }) => (
   <header className="header">
-    <h1>{Labels.ORGANOZATION_NAME}</h1>
+    <h1>{orgName || Labels.ORGANIZATION_NAME}</h1>
   </header>
-);
+)
 
-export default Header;
+Header.propTypes = {
+  orgName: PropTypes.string,
+}
+
+Header.defaultProps = {
+  orgName: Labels.ORGANIZATION_NAME,
+}
+
+export default Header

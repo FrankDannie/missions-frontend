@@ -1,7 +1,8 @@
+/* Common form styles for mission and robot forms */
 .mission-form,
 .robot-form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Light grey background for the forms */
+  padding: 20px; /* Space inside the form container */
+  border-radius: 8px; /* Rounded corners for the form container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
 }

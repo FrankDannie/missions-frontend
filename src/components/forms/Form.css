@@ -1,70 +1,96 @@
+:root {
+  --background-color: #f9f9f9;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color: #333;
+  --border-color: #ccc;
+  --border-radius: 4px;
+  --padding-small: 8px;
+  --padding-medium: 10px 15px;
+  --padding-large: 20px;
+  --margin-small: 5px;
+  --margin-medium: 10px;
+  --margin-large: 15px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container */
 .form-container {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  padding: var(--padding-large);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   max-width: 500px;
   margin: 0 auto;
 }
 
 .form-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: var(--padding-large);
 }
 
+/* Form Labels */
 .form-container label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: var(--margin-medium);
 }
 
+/* Form Inputs and Textareas */
 .form-container input,
 .form-container textarea {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: var(--padding-small);
+  margin-top: var(--margin-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 
+/* Form Buttons */
 .form-container button {
-  padding: 10px 15px;
-  margin-right: 10px;
+  padding: var(--padding-medium);
+  margin-right: var(--margin-medium);
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 }
 
+/* Submit Button */
 .form-container button[type='submit'] {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
+/* Button */
 .form-container button[type='button'] {
-  background-color: #6c757d;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
+/* Form Option */
 .form-container option {
-  padding: 10px; /* Add padding for better spacing */
+  padding: var(--padding-medium); /* Add padding for better spacing */
 }
 
+/* Form Group */
 .form-container .form-group {
-  margin-bottom: 15px; /* Add spacing between form elements */
+  margin-bottom: var(--margin-large); /* Add spacing between form elements */
 }
 
+/* Select on Focus */
 .form-container select:focus {
-  border-color: #007bff; /* Highlight border color on focus */
+  border-color: var(--primary-color); /* Highlight border color on focus */
   box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.2); /* Add subtle shadow effect on focus */
 }
 
+/* Form Select */
 .form-container select {
   width: 100%;
   padding: 12px 15px; /* Increase padding for better visual appeal */
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-top: var(--margin-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   background-color: #fff;
   font-size: 16px; /* Adjust font size for readability */
-  color: #333; /* Text color */
+  color: var(--text-color); /* Text color */
   appearance: none; /* Remove default styling */
   transition:
     border-color 0.2s ease,

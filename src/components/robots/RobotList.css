@@ -3,10 +3,12 @@
   justify-content: center;
   align-items: center;
   margin: 20px auto; /* Centers container horizontally with margin auto */
+  padding: 0 10px; /* Add padding to handle smaller screens */
 }
 
 .robot-table {
-  width: 100%; /* Adjust width as needed */
+  width: 100%;
+  max-width: 1200px; /* Limit max width for large screens */
   border-collapse: collapse;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual */
 }
@@ -14,14 +16,31 @@
 .robot-table th,
 .robot-table td {
   border: 1px solid #ddd;
-  padding: 10px 180px;
+  padding: 10px;
   text-align: center;
 }
 
+.robot-table th {
+  background-color: #f4f4f4; /* Add a background color to header for better contrast */
+}
+
 .robot-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9; /* Slightly different color for better readability */
 }
 
 .robot-table tr:hover {
-  background-color: #ddd;
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .robot-table {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .robot-table th,
+  .robot-table td {
+    padding: 8px; /* Reduce padding on smaller screens */
+  }
 }

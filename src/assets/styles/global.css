@@ -1,43 +1,50 @@
+/* Global Styles */
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensure consistent box-sizing model */
 }
 
+/* Form Element Inheritance */
 input,
 textarea,
 button {
-  font-family: inherit;
-  font-size: inherit;
+  font-family: inherit; /* Inherit font-family from parent */
+  font-size: inherit; /* Inherit font-size from parent */
 }
 
+/* Form Layout */
 form div {
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Space between form fields */
 }
 
+/* Form Labels */
 form label {
-  display: block;
-  margin-bottom: 5px;
+  display: block; /* Ensure labels are block elements */
+  margin-bottom: 5px; /* Space between label and input */
 }
 
+/* Form Inputs and Textareas */
 form input,
 form textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%; /* Full width of the parent container */
+  padding: 8px; /* Padding inside the input/textarea */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
 }
 
+/* Form Buttons */
 form button {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 10px 15px; /* Padding inside the button */
+  background-color: #007bff; /* Primary blue background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
 }
 
+/* Form Button Hover State */
 form button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover */
 }

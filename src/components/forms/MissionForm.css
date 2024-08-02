@@ -1,33 +1,47 @@
 @import './Form.css';
 
+/* Mission Form Specific Styles */
 .mission-form {
-  /* The .form-container class from Form.css will handle this */
+  /* Inherit general form styles from Form.css */
 }
 
+/* Heading Style */
 .mission-form h2 {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin-large); /* Use CSS variable for consistency */
 }
 
+/* Label Styles */
 .mission-form label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: var(--margin-medium); /* Use CSS variable for consistency */
 }
 
+/* Input and Textarea Styles */
 .mission-form input,
 .mission-form textarea {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: var(--padding-small); /* Use CSS variable for consistency */
+  margin-top: var(--margin-small); /* Use CSS variable for consistency */
+  border: 1px solid var(--border-color); /* Use CSS variable for consistency */
+  border-radius: var(--border-radius); /* Use CSS variable for consistency */
 }
 
+/* Submit Button Styles */
 .mission-form button[type='submit'] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #007bff; /* Primary color for submit button */
+  color: #fff; /* White text */
 }
 
+.mission-form button[type='submit']:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Button Styles */
 .mission-form button[type='button'] {
-  background-color: #6c757d;
-  color: #fff;
+  background-color: #6c757d; /* Secondary color for button */
+  color: #fff; /* White text */
+}
+
+.mission-form button[type='button']:hover {
+  background-color: #5a6268; /* Darker shade on hover */
 }

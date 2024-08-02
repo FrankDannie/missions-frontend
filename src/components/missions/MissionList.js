@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './MissionList.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import './MissionList.css'
 
 const MissionList = ({ missions, onSelect }) => {
   return (
@@ -12,16 +12,27 @@ const MissionList = ({ missions, onSelect }) => {
           </tr>
         </thead>
         <tbody>
-          {missions.map((mission) => (
-            <tr key={mission.id} onClick={() => onSelect(mission.id)}>
-              <td>{mission.name || 'N/A'}</td>
+          {missions.length === 0 ? (
+            <tr>
+              <td colSpan="1">No missions available</td>
             </tr>
-          ))}
+          ) : (
+            missions.map((mission) => (
+              <tr
+                key={mission.id}
+                onClick={() => onSelect(mission.id)}
+                role="button"
+                className="mission-row"
+              >
+                <td>{mission.name || 'N/A'}</td>
+              </tr>
+            ))
+          )}
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
 MissionList.propTypes = {
   missions: PropTypes.arrayOf(
@@ -31,6 +42,6 @@ MissionList.propTypes = {
     })
   ).isRequired,
   onSelect: PropTypes.func.isRequired,
-};
+}
 
-export default MissionList;
+export default MissionList

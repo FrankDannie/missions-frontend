@@ -1,20 +1,22 @@
-import React from 'react';
-import '../common/Modal.css';
+import React from 'react'
+import '../common/Modal.css'
 
 const RobotDetailModal = ({ robot, onClose }) => {
-  if (!robot) return null;
+  if (!robot) return null
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h2>{robot.name}</h2>
         <p>
           <strong>Model:</strong> {robot.model_name}
         </p>
-        <button onClick={onClose}>Close</button>
+        <button onClick={onClose} aria-label="Close">
+          Close
+        </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RobotDetailModal;
+export default RobotDetailModal
