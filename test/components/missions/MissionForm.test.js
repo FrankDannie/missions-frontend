@@ -62,11 +62,11 @@ describe('MissionForm', () => {
     });
 
     // Update the form fields
-    fireEvent.change(screen.getByLabelText(Labels.mission.MISSION_NAME), { target: { value: 'Updated Mission' } });
-    fireEvent.change(screen.getByLabelText(Labels.mission.MISSION_DESCRIPTION), { target: { value: 'Updated Description' } });
+    fireEvent.change(screen.getByLabelText(Labels.mission.NAME), { target: { value: 'Updated Mission' } });
+    fireEvent.change(screen.getByLabelText(Labels.mission.DESCRIPTION), { target: { value: 'Updated Description' } });
 
     // Submit the form
-    fireEvent.click(screen.getByText(Labels.mission.UPDATE));
+    fireEvent.click(screen.getByText(Labels.form.UPDATE));
 
     // Wait for the updateMission API call
     await waitFor(() => expect(updateMission).toHaveBeenCalledWith(missionId, {

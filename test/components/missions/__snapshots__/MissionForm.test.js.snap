@@ -10,7 +10,7 @@ exports[`MissionForm renders form for creating a new mission 1`] = `
     </h2>
     <form>
       <label>
-        Mission Name:
+        Mission Name
         <input
           name="name"
           required=""
@@ -19,14 +19,14 @@ exports[`MissionForm renders form for creating a new mission 1`] = `
         />
       </label>
       <label>
-        Description:
+        Description
         <textarea
           name="description"
           required=""
         />
       </label>
       <label>
-        Robot:
+        Robot
         <select
           name="robot_id"
           required=""
@@ -73,7 +73,7 @@ exports[`MissionForm renders form for updating an existing mission 1`] = `
     </h2>
     <form>
       <label>
-        Mission Name:
+        Mission Name
         <input
           name="name"
           required=""
@@ -82,7 +82,7 @@ exports[`MissionForm renders form for updating an existing mission 1`] = `
         />
       </label>
       <label>
-        Description:
+        Description
         <textarea
           name="description"
           required=""
@@ -91,7 +91,7 @@ exports[`MissionForm renders form for updating an existing mission 1`] = `
         </textarea>
       </label>
       <label>
-        Robot:
+        Robot
         <select
           name="robot_id"
           required=""

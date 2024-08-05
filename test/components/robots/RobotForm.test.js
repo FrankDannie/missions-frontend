@@ -11,12 +11,12 @@ describe('RobotForm', () => {
     test('renders form for creating a new robot', () => {
         const { asFragment } = render(<RobotForm onClose={() => {}} />);
     
-        expect(screen.getByText(Labels.robot.CREATETITLE)).toBeInTheDocument();
+        expect(screen.getByText(Labels.robot.CREATE_TITLE)).toBeInTheDocument();
     
         // Select the first element matching the label
         expect(screen.getAllByLabelText(/Name/i)[0]).toBeInTheDocument();
         expect(screen.getAllByLabelText(/Model Name/i)[0]).toBeInTheDocument();
-        expect(screen.getByRole('button', { name: Labels.form.SUBMIT })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: Labels.form.CREATE })).toBeInTheDocument();
         expect(screen.getByRole('button', { name: Labels.CANCEL })).toBeInTheDocument();
     
         // Snapshot for creating a new robot
@@ -54,7 +54,7 @@ describe('RobotForm', () => {
     
         fireEvent.change(screen.getAllByLabelText(/Name/i)[0], { target: { value: 'Updated Robot' } });
         fireEvent.change(screen.getAllByLabelText(/Model Name/i)[0], { target: { value: 'Updated Model' } });
-        fireEvent.click(screen.getByRole('button', { name: Labels.form.SUBMIT }));
+        fireEvent.click(screen.getByRole('button', { name: Labels.form.UPDATE }));
     
         await waitFor(() => {
             expect(updateRobot).toHaveBeenCalledWith('1', { name: 'Updated Robot', model_name: 'Updated Model' });

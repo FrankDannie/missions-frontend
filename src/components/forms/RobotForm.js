@@ -53,7 +53,7 @@ const RobotForm = ({ robotId, onClose, onSubmit }) => {
       <h2>{robotId ? Labels.robot.UPDATE_TITLE : Labels.robot.CREATE_TITLE}</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          {Labels.robot.NAME}:
+          {Labels.robot.NAME}
           <input
             type="text"
             name="name"
@@ -63,7 +63,7 @@ const RobotForm = ({ robotId, onClose, onSubmit }) => {
           />
         </label>
         <label>
-          {Labels.robot.MODEL_NAME}:
+          {Labels.robot.MODEL_NAME}
           <input
             type="text"
             name="model_name"
@@ -73,7 +73,7 @@ const RobotForm = ({ robotId, onClose, onSubmit }) => {
           />
         </label>
         <button type="submit">
-          {robotId ? Labels.form.SUBMIT : Labels.form.SUBMIT}
+          {robotId ? Labels.form.UPDATE : Labels.form.CREATE}
         </button>
         <button type="button" onClick={handleCancel}>
           {Labels.CANCEL}

@@ -10,7 +10,7 @@ exports[`RobotForm renders form for creating a new robot 1`] = `
     </h2>
     <form>
       <label>
-        Name:
+        Name
         <input
           name="name"
           required=""
@@ -19,7 +19,7 @@ exports[`RobotForm renders form for creating a new robot 1`] = `
         />
       </label>
       <label>
-        Model Name:
+        Model Name
         <input
           name="model_name"
           required=""
@@ -30,7 +30,7 @@ exports[`RobotForm renders form for creating a new robot 1`] = `
       <button
         type="submit"
       >
-        Submit
+        Create
       </button>
       <button
         type="button"
@@ -52,7 +52,7 @@ exports[`RobotForm renders form with robot data for editing 1`] = `
     </h2>
     <form>
       <label>
-        Name:
+        Name
         <input
           name="name"
           required=""
@@ -61,7 +61,7 @@ exports[`RobotForm renders form with robot data for editing 1`] = `
         />
       </label>
       <label>
-        Model Name:
+        Model Name
         <input
           name="model_name"
           required=""
@@ -72,7 +72,7 @@ exports[`RobotForm renders form with robot data for editing 1`] = `
       <button
         type="submit"
       >
-        Submit
+        Update
       </button>
       <button
         type="button"
@@ -94,7 +94,7 @@ exports[`RobotForm submits form data correctly for updating an existing robot 1`
     </h2>
     <form>
       <label>
-        Name:
+        Name
         <input
           name="name"
           required=""
@@ -103,7 +103,7 @@ exports[`RobotForm submits form data correctly for updating an existing robot 1`
         />
       </label>
       <label>
-        Model Name:
+        Model Name
         <input
           name="model_name"
           required=""
@@ -114,7 +114,7 @@ exports[`RobotForm submits form data correctly for updating an existing robot 1`
       <button
         type="submit"
       >
-        Submit
+        Update
       </button>
       <button
         type="button"

@@ -31,14 +31,14 @@ export const Labels = {
     CREATE_TITLE: 'Create Mission',
     UPDATE_TITLE: 'Update Mission',
     SELECT_ROBOT: 'Select a robot',
-    CREATE: 'Create',
-    UPDATE: 'Update',
   },
 
   // Form labels
   form: {
     SUBMIT: 'Submit',
     RESET: 'Reset',
+    CREATE: 'Create',
+    UPDATE: 'Update',
   },
 }
 
